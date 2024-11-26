@@ -1,0 +1,247 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    max-width: 100%;
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    /*height: auto;*/
+    background-image: url(../assets/img/bosque_bonito.jpg);
+    object-fit:contain;  /*Para asegurarnos de que la imagen no se nos está yendo, que queremos qeu cubra el espacio del contenedor*/
+    object-position:center;/*Que coja el punto central de mi imagen*/
+    background-repeat: no-repeat;
+    /*background-position: center;*/
+}
+
+header{
+    display: flex;
+    position: sticky;
+    top: 0;
+    height: 125px;
+    padding: 15px;
+    background-color:rgba(0,0,0, .8);
+    color: white;
+    justify-content:space-between;
+    align-items: flex-end;
+}
+
+.cabeceraLogo{
+    display: flex;
+    align-items: center;
+}
+
+header img{
+    width: 80px;
+    height: 80px;
+    margin: 10px;
+    flex-direction: row;
+}
+nav{
+    display: flex;
+    flex-direction: row;
+}
+nav ul{
+    display: flex;
+    margin: 20px;
+    gap: 40px;
+    list-style: none;
+}
+
+nav ul li a{
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    transition: all .4s ease;
+}
+
+nav ul li a:hover{
+    color: darkseagreen;
+}
+
+/*nav ul li:last-child{
+    padding: 15px;
+    font-size: 16px;
+    color: white;
+    border: 2px solid white;
+    border-radius: 20px;
+    background-color: rgba(138, 230, 47, 0.0);
+}*/
+
+nav input{
+    padding: 15px;
+    font-size: 16px;
+    color: white;
+    border: 2px solid white;
+    border-radius: 20px;
+    background-color: rgba(138, 230, 47, 0.0);
+    cursor: pointer;
+    transition: all .4s ease;
+}
+nav input:hover{
+    background-color: green;
+}
+.jalisco{
+    color: white;
+    font-size: 72px;
+    text-shadow: 3px 3px black;
+    margin-top: 200px;
+    margin-left: 300px;
+    margin-bottom: 500px;
+}
+.portadaViaja{
+    width: 800px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 15px;
+    padding-left: 30px;
+    background-color: white;
+    font-size: 32px;
+    color: black;
+    text-shadow: none;
+    border-radius: 50px;
+}
+.jalisco p{
+    padding-top: 10px;
+}
+.portadaViaja input{
+    padding: 20px;
+    font-size: 16px;
+    color: white;
+    border: 2px solid white;
+    border-radius: 50px;
+    background-color:green;
+    cursor: pointer;
+    transition: all .4s ease;
+}
+
+.portadaViaja input:hover{
+    background-color:rgb(2, 88, 2);
+}
+
+.portadaRazones{
+    margin-top: 500px;
+    color: white;
+    text-shadow: 2px 2px black;
+}
+.portadaRazones h2{
+    font-size: 42px;
+    margin: 50px;
+    color: black;
+    text-shadow: none;
+}
+.portadaContainer{
+    width: 100%;
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+}
+
+.cajaGrande, .cajaMediana, .cajaEnana{
+    margin: 15px;
+    width: 31%;
+    font-size: 54px;
+}
+.cajaGrande{
+    height: 700px;
+    padding: 20px;
+    padding-top: 190px;
+    background-color: green;
+}
+.cajaMediana{
+    height: 550px;
+    padding: 20px;
+    padding-top: 45px;
+    background-image: url(../assets/img/camper_portada.jpg);
+    object-position: center;
+    background-position: center;
+}
+.subcaja1{
+    height: 267px;
+    padding: 20px;
+    padding-top: 45px;
+    margin-bottom: 15px;
+    background-image: url(../assets/img/camper_portada_2.jpg);
+    background-size: cover;
+    background-repeat: none;
+}
+.subcaja2{
+    height: 267px;
+    padding: 20px;
+    padding-top: 45px;
+    margin-top: 15px;
+    background-color: orange;
+}
+footer{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 30% 45%;
+    justify-content: space-between;
+    background-color: rgba(0,0,0, .7);
+    color: white;
+}
+.footerInfo{
+    padding: 50px;
+    padding-left: 105px;
+    line-height: 30px;
+    word-spacing: 7px;
+    font-size: 20px;
+}
+.footerformu{
+    margin: 10px;
+}
+.footerformu div{
+    display: flex;
+    gap: 30px;
+    padding: 10px;
+    font-size: 20px;
+    align-items: center;
+}
+.footerformu div label{
+    width: 80px;
+}
+textarea{
+    width: 485px;
+}
+.footerformu input{
+    border: none;
+    height: 25px;
+    padding: 7px;
+}
+.footerformu textarea{
+    padding: 7px;
+}
+.footerformu input::placeholder, .footerformu textarea::placeholder{
+    color: #0f750f;
+    font-size: 12px;
+}
+
+.footerformu input[type="submit"]{
+    width: 200px;
+    height: 32px;
+    border-radius: 20px;
+    background-color: rgb(17, 167, 17);
+    color: white;
+}
+.footerformu input[type="submit"]:hover{
+    background-color: green;
+}
+
+.footerBoton{
+    margin-left: 230px;
+}
+
+.footerValido{
+    background-color: rgb(175, 250, 175);
+}
+
+.footerInvalido{
+    background-color: rgb(252, 145, 106);
+}
+

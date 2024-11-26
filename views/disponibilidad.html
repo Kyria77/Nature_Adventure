@@ -1,0 +1,67 @@
+<html lang="es">
+    <head>
+        <meta charset="es">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Estructura web</title>
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="icon" href="../favicon.png" type="image/png">
+    </head>
+    <body>
+        <header>
+            <div class="cabeceraLogo">
+                <img src="../favicon.png" alt="logo empresa" width="924" height="1089">
+                <h1>Nature adventure</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="#">Viajes</a></li>
+                    <li><a href="#">Camper</a></li>
+                    <li><a href="#">Contacta</a></li>
+                    <!--<li><a href="#">Ver disponibilidad</a></li>-->
+                </ul>
+                <a href="#"><input type="button" value="Ver disponibilidad"></a>
+            </nav>
+        </header>
+        <main>
+            Hola
+        </main>
+        <footer>
+            <div class="footerInfo">
+                <div class="footerContacto">
+                    <p>Calle Inventada, Nº 250</p>
+                    <p>CP: 30000 Cuidad Inventada</p>
+                    <p>Tfno: 600000000</p>
+                </div>
+                <div class="footerCopy">
+                    <p>&copy; Reservados todos los derechos</p>
+                </div>
+            </div>
+            <div class="footerformu">
+                <form id="footerForm" name="footerForm" action="#" method="get" target="_self">
+                    <div>
+                        <label for="nombre">Nombre: </label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre">
+                        <label for="apellidos">Apellidos: </label>
+                        <input type="text" id="apellidos" name="apellidos" placeholder="Escribe tus apellidos">
+                    </div>
+                    <div>
+                        <label for="email">Email: </label>
+                        <input type="email" id="email" name="email" placeholder="Escribe tu email">
+                        <label for="asunto">Asunto: </label>
+                        <input type="text" id="asunto" name="asunto" placeholder="Escribe tu asunto">
+                    </div>
+                    <div>
+                        <label for="mensaje">Mensaje: </label>
+                        <textarea rows="6" id="mensaje" name="mensaje" placeholder="Escribe aquí tu mensaje"></textarea>
+                    </div>
+                    <div class="footerBoton">
+                        <input type="submit" value="Enviar">
+                    </div>
+                </form>
+            </div>
+        </footer>
+
+        <script src="./js/script_formu_footer.js"></script>
+    </body>
+</html>
