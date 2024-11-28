@@ -1,0 +1,43 @@
+main{
+    background-color: rgb(236,253,226);
+}
+
+.contenedor-viajes{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    margin: 50px auto;
+    width: 80%;
+    border: 1px solid grey;
+    border-radius: 10px;
+    padding: 40px;
+}
+
+.titulo-viajes{
+    text-align: center;
+    margin: 30px;
+    font-size: 36px;
+}
+
+.contenedor-viajes h3{
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 24px;
+}
+.imagen_viajes{
+    width: 85%;
+    margin: 15px auto;
+    border-radius: 10px;
+
+}
+
+.descripcion_viajes, .contenedor-viajes a{
+    margin: 20 auto;
+    text-align: justify;
+}
+footer{
+    background-color: black;
+}
+
+
+
