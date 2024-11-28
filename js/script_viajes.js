@@ -11,17 +11,21 @@ function realizarFetch(url){
         })
 
         .then(data =>{
-            data.forEach(viajes =>{
-                containerViajes.innerHTML += 
-                `
-                <div class="contenedor-viajes">
-                    <h3>${viajes.titulo}</h3>
-                    <img class="imagen_viajes" src=${viajes.ruta_img} alt=${viajes.alt_img} width=${viajes.width_img} height=${viajes.height}>
-                    <p class="descripcion_viajes">${viajes.descripcion}</p>
-                    <a href="#" ><input type="button" class="disponibilidad_viajes" value="Ver disponibilidad"></a>
-                </div>
-                `
-            });
+            if(Array.isArray(data.viajes)){
+                data.viajes.forEach(viaje =>{
+                    containerViajes.innerHTML += 
+                    `
+                    <div class="contenedor-viajes">
+                        <h3>${viaje.titulo}</h3>
+                        <img class="imagen_viajes" src=${viaje.ruta_img} alt=${viaje.alt_img} width=${viaje.width_img} height=${viaje.height}>
+                        <p class="descripcion_viajes">${viaje.descripcion}</p>
+                        <a href="#" ><input type="button" class="disponibilidad_viajes" value="Ver disponibilidad"></a>
+                    </div>
+                    `
+                });
+            }else{
+                throw new Error("Formato inesperado de JSON");
+            }
         })
 
         .catch(error =>{
