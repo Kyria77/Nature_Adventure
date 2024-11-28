@@ -27,6 +27,7 @@ header{
     color: white;
     justify-content:space-between;
     align-items: flex-end;
+    z-index: 5;
 }
 
 .cabeceraLogo{

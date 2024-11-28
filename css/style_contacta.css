@@ -101,6 +101,7 @@ button{
 #mapaContacta{
     width: 70%;
     height: 400px;
+    z-index: 1;
 }
 
 footer{
